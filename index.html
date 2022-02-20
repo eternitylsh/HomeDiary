@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HomeDiary</title>
+</head>
+
+<body>
+    <div id="weather">
+        <img src="" />
+        <div id="temp_local">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <h2 id="clock">00:00:00</h2>
+    <form id="login-form" class="hidden">
+        <input required maxlength="15" type="text" placeholder="what's your name?" />
+        <input type="submit" value="Log In" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="search">
+        <a href="http://www.google.co.kr"><img src="img/chrome.png" /></a>
+        <form id="search-form">
+            <input maxlength="18" type="text" />
+            <input type="image" src="img/search.png" alt="search button" />
+        </form>
+    </div>
+    <div id="todo" class="bluebox hidden">
+        <form id="todo-form">
+            <input type="text" placeholder="Write To Do and Press Enter." required />
+        </form>
+        <div id="td-list">
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    <div id="memo" class="bluebox hidden">
+        <form id="memo-input">
+            <input type="text" placeholder="Today Memo" required>
+        </form>
+        <div id="memo-text">
+            <span></span>
+            <button id="memo-delete" class="hidden">X</button>
+        </div>
+
+    </div>
+    <div id="quote">
+        <div></div>
+        <div></div>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/memo.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>
