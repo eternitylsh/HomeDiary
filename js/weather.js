@@ -24,7 +24,6 @@ const WIconCLUpdate = newicode => {
     const weather_icon = document.querySelector("#weather i")
     const in_icon = ft_w.icons[newicode];
     weather_icon.className = `fa-${ft_w.style} fa-${in_icon.icon} fa-${ft_w.size} fa-${in_icon.ani} ${in_icon.sub}`;
-    console.log(weather_icon.className)
 }
 
 const onGeoSuccess = pos => {
