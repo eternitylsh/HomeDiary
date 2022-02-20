@@ -242,7 +242,7 @@ input::placeholder {
 
 #quote {
     position: absolute;
-    top: 91%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
