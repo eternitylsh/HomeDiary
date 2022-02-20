@@ -44,9 +44,11 @@ button {
     left: 90%;
 }
 
-#weather img {
+#weather i {
     display: inline-block;
-    width: 80px;
+    margin-bottom: 5px;
+    --fa-animation-duration: 5s;
+    --fa-fade-opacity: 0.4;
 }
 
 #temp_local span {
@@ -163,12 +165,18 @@ input::placeholder {
     color: white;
 }
 
+
+/* greeting */
+
 #greeting {
     text-align: center;
     font-size: 60px;
     margin-top: 20px;
     margin-bottom: 8px;
 }
+
+
+/* todo */
 
 #todo {
     position: absolute;
@@ -217,6 +225,9 @@ input::placeholder {
     margin-right: 8px;
 }
 
+
+/* quote */
+
 #quote {
     position: absolute;
     top: 91%;
@@ -228,6 +239,9 @@ input::placeholder {
 #quote div {
     font-size: 16px;
 }
+
+
+/* Etc.. */
 
 .hidden {
     display: none;
