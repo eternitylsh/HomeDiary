@@ -11,8 +11,8 @@ const VolumeInterval = 0.1
 const onSoundEvent = {
     play: () => audio.play(),
     pause: () => audio.pause(),
-    VolUp: () => audio.volume += VolumeInterval,
-    VolDown: () => audio.volume -= VolumeInterval,
+    VolUp: () => audio.volume = (0.9 < audio.volume) ? audio.volume : (audio.volume + VolumeInterval),
+    VolDown: () => audio.volume = (0.1 > audio.volume) ? audio.volume : (audio.volume - VolumeInterval),
 }
 
 
