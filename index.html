@@ -18,6 +18,17 @@
             <span></span>
         </div>
     </div>
+    <div id="audioplayer">
+        <audio preload="metadata">
+            <source src="audio/394583920.mp3" type="audio/ogg">
+        </audio>
+        <div id="audiocontrols">
+            <button><i class="fa-solid fa-play fa-2x"></i></button>
+            <button><i class="fa-solid fa-pause fa-2x"></i></button>
+            <button><i class="fa-solid fa-volume-high fa-2x"></i></button>
+            <button><i class="fa-solid fa-volume-low fa-2x"></i></button>
+        </div>
+    </div>
     <h2 id="clock">00:00:00</h2>
     <form id="login-form" class="hidden">
         <input required maxlength="15" type="text" placeholder="what's your name?" />
@@ -61,6 +72,7 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/audio.js"></script>
 </body>
 
 </html>

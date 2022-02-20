@@ -57,6 +57,15 @@ button {
 }
 
 
+/* audio  */
+
+#audioplayer {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+
 /* clock */
 
 h2 {
@@ -245,4 +254,16 @@ input::placeholder {
 
 .hidden {
     display: none;
+}
+
+
+/* ani */
+
+.fadeani {
+    --fa-animation-duration: 5s;
+    --fa-fade-opacity: 0.4;
+}
+
+.beatani {
+    --fa-animation-duration: 2s;
 }

@@ -18,7 +18,7 @@ const ft_w = {
         '50': 'smog',
     },
     size: "3x",
-    anime: "fade", // ohter animes in after......
+    anime: "fade", // ohter animes in after...... etc......
 }
 
 const WIconCLUpdate = newicode => {
