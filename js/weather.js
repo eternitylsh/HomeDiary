@@ -7,23 +7,24 @@ document.cookie = "safeCookie1=foo; SameSite=Lax"; // 쿠키설정.
 const ft_w = {
     style: "solid",
     icons: {
-        '01': 'sun',
-        '02': 'cloud-sun',
-        '03': 'cloud',
-        '04': 'cloud-meatball',
-        '09': 'cloud-showers-heavy',
-        '10': 'cloud-sun-rain',
-        '11': 'bolt',
-        '13': 'snowflake',
-        '50': 'smog',
+        '01': { icon: 'sun', ani: 'spin', sub: '' },
+        '02': { icon: 'cloud-sun', ani: 'fade', sub: 'fadeani' },
+        '03': { icon: 'cloud', ani: 'bounce', sub: '' },
+        '04': { icon: 'cloud-meatball', ani: 'bounce', sub: 'bounceani' },
+        '09': { icon: 'cloud-showers-heavy', ani: 'beat-fade', sub: 'bfani' },
+        '10': { icon: 'cloud-sun-rain', ani: 'fade', sub: '' },
+        '11': { icon: 'bolt', ani: 'beat-fade', sub: 'bfani' },
+        '13': { icon: 'snowflake', ani: 'spin', sub: '' },
+        '50': { icon: 'smog', ani: 'fade', sub: 'fadeani2' },
     },
-    size: "3x",
-    anime: "fade", // ohter animes in after...... etc......
+    size: "3x"
 }
 
 const WIconCLUpdate = newicode => {
     const weather_icon = document.querySelector("#weather i")
-    weather_icon.className = `fa-${ft_w.style} fa-${ft_w.icons[newicode]} fa-${ft_w.size} fa-${ft_w.anime}`;
+    const in_icon = ft_w.icons[newicode];
+    weather_icon.className = `fa-${ft_w.style} fa-${in_icon.icon} fa-${ft_w.size} fa-${in_icon.ani} ${in_icon.sub}`;
+    console.log(weather_icon.className)
 }
 
 const onGeoSuccess = pos => {

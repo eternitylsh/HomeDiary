@@ -260,10 +260,25 @@ input::placeholder {
 /* ani */
 
 .fadeani {
-    --fa-animation-duration: 5s;
+    --fa-animation-duration: 4s;
     --fa-fade-opacity: 0.4;
+}
+
+.fadeani2 {
+    --fa-animation-duration: 6s;
+    --fa-fade-start-opacity: 0.1;
+    --fa-fade-opacity: 0.05;
+}
+
+.bounceani {
+    --fa-animation-duration: 0.1s;
 }
 
 .beatani {
     --fa-animation-duration: 2s;
+}
+
+.bfani {
+    --fa-beat-fade-opacity: 0.1;
+    --fa-beat-fade-scale: 1.25;
 }
