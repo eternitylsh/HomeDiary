@@ -7,12 +7,12 @@ document.cookie = "safeCookie1=foo; SameSite=Lax"; // 쿠키설정.
 const ft_w = {
     style: "solid",
     icons: {
-        '01': { icon: 'sun', ani: 'spin', sub: '' },
+        '01': { icon: 'sun', ani: 'spin', sub: 'spinani' },
         '02': { icon: 'cloud-sun', ani: 'fade', sub: 'fadeani' },
-        '03': { icon: 'cloud', ani: 'bounce', sub: '' },
-        '04': { icon: 'cloud-meatball', ani: 'bounce', sub: 'bounceani' },
+        '03': { icon: 'cloud', ani: 'bounce', sub: 'bounceani' },
+        '04': { icon: 'cloud-meatball', ani: 'bounce', sub: 'frogani' },
         '09': { icon: 'cloud-showers-heavy', ani: 'beat-fade', sub: 'bfani' },
-        '10': { icon: 'cloud-sun-rain', ani: 'fade', sub: '' },
+        '10': { icon: 'cloud-sun-rain', ani: 'fade', sub: 'fadeani' },
         '11': { icon: 'bolt', ani: 'beat-fade', sub: 'bfani' },
         '13': { icon: 'snowflake', ani: 'spin', sub: '' },
         '50': { icon: 'smog', ani: 'fade', sub: 'fadeani2' },

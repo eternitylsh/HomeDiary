@@ -47,8 +47,6 @@ button {
 #weather i {
     display: inline-block;
     margin-bottom: 5px;
-    --fa-animation-duration: 5s;
-    --fa-fade-opacity: 0.4;
 }
 
 #temp_local span {
@@ -153,7 +151,10 @@ h2 {
 /* login */
 
 #login-form {
-    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translateX(-50%);
 }
 
 #login-form input {
@@ -180,8 +181,10 @@ input::placeholder {
 #greeting {
     text-align: center;
     font-size: 60px;
-    margin-top: 20px;
-    margin-bottom: 8px;
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform: translateX(-50%);
 }
 
 
@@ -259,6 +262,10 @@ input::placeholder {
 
 /* ani */
 
+.spinani {
+    --fa-animation-duration: 6s;
+}
+
 .fadeani {
     --fa-animation-duration: 4s;
     --fa-fade-opacity: 0.4;
@@ -271,7 +278,16 @@ input::placeholder {
 }
 
 .bounceani {
-    --fa-animation-duration: 0.1s;
+    --fa-animation-duration: 2.5s;
+}
+
+.frogani {
+    --fa-bounce-start-scale-x: 1;
+    --fa-bounce-start-scale-y: 1;
+    --fa-bounce-jump-scale-x: 0.8;
+    --fa-bounce-jump-scale-y: 0.9;
+    --fa-bounce-land-scale-x: 0.7;
+    --fa-bounce-land-scale-y: 1;
 }
 
 .beatani {

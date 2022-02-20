@@ -7,7 +7,6 @@ const getClock = () => {
     const date = new Date()
     const hour = date.getHours().toString().padStart(formatNumCount, fillClockNum)
     const minute = date.getMinutes().toString().padStart(formatNumCount, fillClockNum)
-        // const second = date.getSeconds().toString().padStart(formatNumCount, fillClockNum)
     clock.innerText = `${hour}:${minute}`
 }
 
